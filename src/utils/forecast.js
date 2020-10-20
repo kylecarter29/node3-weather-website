@@ -13,7 +13,7 @@ const forecast = (latitude, longitute, callback) => {
           const currentTemp = body.current.temperature; // dig into data returned
           const feelsLike = body.current.feelslike;
           const localTime = body.location.localtime;
-          callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + currentTemp + ' degrees out at ' + localTime '. It feels like ' + feelsLike + ' degrees out.')
+          callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + currentTemp + ' degrees out with the local time being ' + localTime + '. It feels like ' + feelsLike + ' degrees out.')
            }
     })
 }
